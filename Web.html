@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title> Hotel Occidental Roca Negra</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <section class="header">
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Poppins">
+    <h1 style="color: white"> OCCIDENTAL ROCA NEGRA</h1>
+  </section>
+
+  <div class="topnav">
+      <a href="Web.html">Inicio</a>
+      <a href="galeria.html">Galería</a>
+      <a href="formulario.html">Club</a>
+      <a href="presentación.html">Presentación</a>
+      <div class="dropdown">
+        <button class="dropbtn">Contacto</button>
+        <div class="dropdown-content">
+          <a href="https://www.instagram.com/barcelohotelsresorts/?hl=es">Instagram</a>
+          <a href="https://es-es.facebook.com/barcelohotels/">Facebook</a>
+          <a href="https://twitter.com/barcelohoteles?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>
+        </div>
+    </div>
+  </div>
+
+
+  <section class="buscador">
+    <label>
+      <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans">
+      Introduce la fecha de tu estancia:
+    <div class="formulario">
+      <form action="action_page.php">
+        Check-in:<input type="date" name = "entrada" id="datePickerId" required/>
+   <script>
+
+   datePickerId.min = new Date().toLocaleDateString('en-ca');
+ </script>
+   Check-out:<input type="date" name="salida" id="datePickerId2" required>
+   <script>
+
+   datePickerId2.min = new Date().toLocaleDateString('en-ca');
+ </script>
+   <script>
+     function myFunction() {
+       document.getElementById("myForm").reset();
+     }
+   </script><br><br>
+   <label for="adultos">Adultos:</label>
+  <select id="adultos" name="adultos">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+  <label for="niños">Niños:</label>
+ <select id="niños" name="niños">
+   <option value="4">0</option>
+   <option value="1">1</option>
+   <option value="2">2</option>
+   <option value="3">3</option>
+
+ </select><br>
+        <input type="submit" value="Enviar">
+        <input type="reset">
+  </form>
+    </form>
+    </div>
+    </label>
+  </section>
+  <section class="imagen">
+
+  </section>
+
+  <section class="espacio">
+
+  </section>
+
+  <section class = "galería">
+    <style>
+    .btn{
+      border: 0px;
+      background-color: transparent;
+      height: 47vh;
+      width: 100%;
+      font-size: 70px;
+      font-family: "Poppins", serif;
+      text-align: center;
+    }
+    </style>
+    <a href="galeria.html">
+      <br><button class="btn"><link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins">
+    <h1 style="color : white">GALERÍA</h1></button></br>
+  </a>
+  </section>
+
+
+  <section class="espacio">
+
+  </section>
+  <section class="opinion_1">
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <h1>Tu opinión nos importa:</h1>
+  </section>
+
+  <form action="action_page.php"
+  <section class="opinion">
+    <label>
+      <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans">
+      <p><br></br>Usuario(Correo Eléctronico):<input type="text"
+        name = "usuario" required = "required" pattern="\w+@\w+\.(com|es|org)"></p>
+      </label>
+      <p> <textarea name="reseña" rows="8" cols="200" placeholder="Escribe aquí tu comentario" required = "required"></textarea></p>
+      <p>Aceptas <a href = "termino.txt">las condiciones y términos de servicio.</a> <input type="checkbox", id = "privacidad", required = "required"></p>
+      <p>Quieres apuntarte a nuestro newsletter  para estar al día de nuestras promociones y noticias: <input type="checkbox", id = "privacidad"></p>
+      <p><input type="submit"></p>
+  </section>
+  <section class="espacio">
+  </section>
+  </form>
+
+
+  </button>
+  </a>
+
+  </section>
+
+</body>
+</html>

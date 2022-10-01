@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.header{
+  min-height: 10vh;
+  width: 100%;
+  background-image: url(Imagenes/agaete.jpg);
+  background-position: center;
+  font-size: 50px;
+  font-family: "Poppins", serif;
+  text-align: center;
+}

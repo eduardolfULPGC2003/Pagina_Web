@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style4.css">
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <div class="topnav">
+          <a href="Web.html">Inicio</a>
+          <a href="galeria.html">Galería</a>
+          <a href="formulario.html">Club</a>
+          <a href="presentación.html">Presentación</a>
+          <div class="dropdown">
+            <button class="dropbtn">Contacto</button>
+            <div class="dropdown-content">
+              <a href="https://www.instagram.com/barcelohotelsresorts/?hl=es">Instagram</a>
+              <a href="https://es-es.facebook.com/barcelohotels/">Facebook</a>
+              <a href="https://twitter.com/barcelohoteles?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>
+            </div>
+        </div>
+      </div>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 8</div>
+      <img src="Imagenes/diapositiva1.jpg" style="width:100%">
+      <div class="text">Portada</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 8</div>
+    <img src="Imagenes/diapositiva2.jpg" style="width:100%">
+    <div class="text">Indice</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 8</div>
+    <img src="Imagenes/diapositiva3.jpg" style="width:100%">
+    <div class="text">Interacción con el usuario I</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 8</div>
+    <img src="Imagenes/diapositiva4.jpg" style="width:100%">
+    <div class="text">Interacción con el usuario II</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 8</div>
+    <img src="Imagenes/diapositiva5.jpg" style="width:100%">
+    <div class="text">Importancia de la interacción con el usuario I</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 8</div>
+    <img src="Imagenes/diapositiva6.jpg" style="width:100%">
+    <div class="text">Importancia de la interacción con el usuario II</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 8</div>
+    <img src="Imagenes/diapositiva7.jpg" style="width:100%">
+    <div class="text">Posicionamiento en la web I</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 8</div>
+    <img src="Imagenes/diapositiva8.jpg" style="width:100%">
+    <div class="text">Posicionamiento en la web II</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+  </div>
+
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Gastronomía| Hotel Occidental Roca Negra </title>
+  <link rel="stylesheet" href="style7.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="topnav">
+      <a href="Web.html">Inicio</a>
+      <a href="galeria.html">Galería</a>
+      <a href="formulario.html">Club</a>
+      <a href="presentación.html">Presentación</a>
+      <div class="dropdown">
+        <button class="dropbtn">Contacto</button>
+        <div class="dropdown-content">
+          <a href="https://www.instagram.com/barcelohotelsresorts/?hl=es">Instagram</a>
+          <a href="https://es-es.facebook.com/barcelohotels/">Facebook</a>
+          <a href="https://twitter.com/barcelohoteles?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>
+        </div>
+    </div>
+  </div>
+
+<section class ="header">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Poppins">
+  <h1 style="color: rgb(141, 111, 55)"> GASTRONOMÍA</h1>
+</section>
+
+
+<div id="hero">
+    <div class="slider">
+      <img src = "Imagenes/left-arrow.png" id = "prev">
+      <div class="preview">
+        <img src="Imagenes/agaete7.jpg" class="active thumbnail">
+        <img src="Imagenes/gas1.jpg" class="thumbnail">
+        <img src="Imagenes/gas2.jpg" class="thumbnail">
+        <img src="Imagenes/gas3.jpg" class="thumbnail">
+        <img src="Imagenes/gas4.jpg" class="thumbnail">
+        <img src="Imagenes/gas6.jpg" class="thumbnail">
+      </div>
+      <img src = "Imagenes/right-arrow.png" id = "next">
+    </div>
+
+    <script>
+      var prev = document.getElementById("prev");
+      var next = document.getElementById("next");
+      var thumbnail = document.getElementsByClassName("thumbnail");
+      var hero = document.getElementById("hero");
+      var backgroundImg = new Array(
+        "Imagenes/agaete7.jpg",
+        "Imagenes/gas1.jpg",
+        "Imagenes/gas2.jpg",
+        "Imagenes/gas3.jpg",
+        "Imagenes/gas4.jpg",
+        "Imagenes/gas6.jpg",
+      );
+      let i = 0;
+      next.onclick = function(){
+        if(i < 5){
+        hero.style.backgroundImage = 'url("'+backgroundImg[i+1]+'")';
+        thumbnail[i+1].classList.add("active");
+        thumbnail[i].classList.remove("active");
+        i++;
+      }
+      }
+
+      prev.onclick = function(){
+        if(i > 0){
+        hero.style.backgroundImage = 'url("'+backgroundImg[i-1]+'")';
+        thumbnail[i-1].classList.add("active");
+        thumbnail[i].classList.remove("active");
+        i--;
+      }
+      }
+    </script>
+</div>
+</html>

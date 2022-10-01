@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  min-height: 10vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0)
+  background-position: center;
+  font-size: 50px;
+  font-family: "Poppins", serif;
+  text-align: center;
+}
+
+
+.habitaciones{
+
+  float:left;
+  min-height: 30vh;
+  width: 33.3%;
+  background-image: url(Imagenes/agaete5.jpg);
+  background-position: center;
+  font-size: 30px;
+  font-family: "Poppins", serif;
+  text-align: center;
+}
+
+.instalaciones{
+  float:left;
+  position: relative;
+  min-height: 30vh;
+  width: 33.3%;
+  background-image: url(Imagenes/agaete6.jpg);
+  background-position: center;
+  font-size: 30px;
+  font-family: "Poppins", serif;
+  text-align: center;
+}
+
+.gastronomia{
+  float:right;
+  min-height: 30vh;
+  width: 33.4%;
+  background-image: url(Imagenes/agaete7.jpg);
+  background-position: center;
+  font-size: 30px;
+  font-family: "Poppins", serif;
+  text-align: center;
+}
+
+.agaete{
+  float:right;
+  min-height: 58.4vh;
+  width: 100%;
+  background-image: url(Imagenes/agaete.jpg);
+  background-position: bottom;
+  font-size: 50px;
+  font-family: "Poppins", serif;
+  text-align: center;
+}

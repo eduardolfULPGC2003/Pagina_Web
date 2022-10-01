@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Club Barceló | Formuñario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+
+    .topnav {
+      overflow: hidden;
+      background-color: rgb(0, 0, 0);
+      font-family: "Poppins", serif
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: rgb(255,255, 255);
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: rgb(95, 82, 57);
+      color: rgb(141, 111, 55);
+    }
+
+    .dropbtn {
+      background-color: rgb(0, 0, 0);
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+
+    .dropdown {
+      position: absolute;
+      display: inline-block;
+      color: black;
+    }
+
+    .dropdown a.active{
+      color: black;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f2f2f2;
+      min-width: 160px;
+      z-index: 1;
+      color: black;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #f2f2f2;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: black;}
+</style>
+</head>
+
+
+<div class="topnav">
+    <a href="Web.html">Inicio</a>
+    <a href="galeria.html">Galería</a>
+    <a href="formulario.html">Club</a>
+    <a href="presentación.html">Presentación</a>
+    <div class="dropdown">
+      <button class="dropbtn">Contacto</button>
+      <div class="dropdown-content">
+        <a href="https://www.instagram.com/barcelohotelsresorts/?hl=es">Instagram</a>
+        <a href="https://es-es.facebook.com/barcelohotels/">Facebook</a>
+        <a href="https://twitter.com/barcelohoteles?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>
+      </div>
+  </div>
+</div>
+
+<h1>Tarjeta de Fidelización</h1>
+<p>
+<img src="Imagenes/tarjetas-regalo-barcelo-hoteles.jpg" align="right">
+</p>
+
+<p>Con este formulario se consiguirá su tarjeta de Fidelización.</p>
+<p> Con esta tarjeta obtendra beneficios, como:</p>
+<ul>
+ <li>35% de descuento en todas sus reservas y viajes.</li>
+ <li>Ser el primero en enterarse de nuestras grandes promociones.</li>
+ <li>Acceder a sorteos y premios exclusivos.</li>
+</ul>
+<p>
+<a>Sus datos personales seran tratados conforme a lo establecido en la ley que corresponda.</a>
+</>
+<form action="../../form-result.php" target="_blank">
+
+  <fieldset>
+
+    <legend>Información Personal</legend>
+
+    <p><label> Nombre: <input type="text" name="nombre" required></label></p>
+    <p><label> Primer apellido: <input type="text" name="Primer apellido" required></label></p>
+    <p><label> Segundo apellido: <input type="text" name="Segundo apellido" required></label></p>
+    <p><label> Dirección de su domicilio: <input type="text" name="Calle" required></label></p>
+    <p><label>Dirección de correo electrónico: <input type="text" name="correo" required></label></p>
+
+  </fieldset>
+
+  <fieldset>
+
+    <legend>Referidos</legend>
+
+    <p>
+
+      ¿Cómo nos ha conocido?<br>
+      </br>
+
+      <label><input type="checkbox" name="html"> Amigos o conocidos</label>
+
+      <label><input type="checkbox" name="graficos"> Redes sociales</label>
+
+      <label><input type="checkbox" name="videojuegos"> Publicidad</label>
+
+      <label><input type="checkbox" name="arte"> Otro</label>
+
+      <label><input type="checkbox" name="musica"> Música</label>
+
+    </p>
+    	<p> ¿Tiene algún codigo de referidos?
+            	<label><input type="checkbox" name="Sí"> Sí</label>
+                <label><input type="checkbox" name="No"> No</label></p>
+         <p><label> Código de referidos: <input type="text" name="referidos"></label></p>
+  </fieldset>
+
+  <p>
+
+    <input type="submit" value="Enviar mensaje">
+
+    <input type="reset" value="Cancelar">
+
+  </p>
+
+</form>
+</html>

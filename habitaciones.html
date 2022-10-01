@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Habitaciones | Hotel Occidental Roca Negra </title>
+  <link rel="stylesheet" href="style6.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="topnav">
+      <a href="Web.html">Inicio</a>
+      <a href="galeria.html">Galería</a>
+      <a href="formulario.html">Club</a>
+      <a href="presentación.html">Presentación</a>
+      <div class="dropdown">
+        <button class="dropbtn">Contacto</button>
+        <div class="dropdown-content">
+          <a href="https://www.instagram.com/barcelohotelsresorts/?hl=es">Instagram</a>
+          <a href="https://es-es.facebook.com/barcelohotels/">Facebook</a>
+          <a href="https://twitter.com/barcelohoteles?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>
+        </div>
+    </div>
+  </div>
+
+<section class ="header">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Poppins">
+  <h1 style="color: rgb(141, 111, 55)"> HABITACIONES</h1>
+</section>
+
+
+<div id="hero">
+    <div class="slider">
+      <img src = "Imagenes/left-arrow.png" id = "prev">
+      <div class="preview">
+        <img src="Imagenes/agaete5.jpg" class="active thumbnail">
+        <img src="Imagenes/hab1.jpg" class="thumbnail">
+        <img src="Imagenes/hab2.jpg" class="thumbnail">
+        <img src="Imagenes/hab3.jpg" class="thumbnail">
+        <img src="Imagenes/hab4.jpg" class="thumbnail">
+        <img src="Imagenes/hab5.jpg" class="thumbnail">
+        <img src="Imagenes/hab6.jpg" class="thumbnail">
+        <img src="Imagenes/hab7.jpg" class="thumbnail">
+        <img src="Imagenes/hab8.jpg" class="thumbnail">
+        <img src="Imagenes/hab9.jpg" class="thumbnail">
+        <img src="Imagenes/hab10.jpg" class="thumbnail">
+        <img src="Imagenes/hab11.jpg" class="thumbnail">
+      </div>
+      <img src = "Imagenes/right-arrow.png" id = "next">
+    </div>
+
+    <script>
+      var prev = document.getElementById("prev");
+      var next = document.getElementById("next");
+      var thumbnail = document.getElementsByClassName("thumbnail");
+      var hero = document.getElementById("hero");
+      var backgroundImg = new Array(
+        "Imagenes/agaete5.jpg",
+        "Imagenes/hab1.jpg",
+        "Imagenes/hab2.jpg",
+        "Imagenes/hab3.jpg",
+        "Imagenes/hab4.jpg",
+        "Imagenes/hab5.jpg",
+        "Imagenes/hab6.jpg",
+        "Imagenes/hab7.jpg",
+        "Imagenes/hab8.jpg",
+        "Imagenes/hab9.jpg",
+        "Imagenes/hab10.jpg",
+        "Imagenes/hab11.jpg",
+      );
+      let i = 0;
+      next.onclick = function(){
+        if(i < 11){
+        hero.style.backgroundImage = 'url("'+backgroundImg[i+1]+'")';
+        thumbnail[i+1].classList.add("active");
+        thumbnail[i].classList.remove("active");
+        i++;
+      }
+      }
+
+      prev.onclick = function(){
+        if(i > 0){
+        hero.style.backgroundImage = 'url("'+backgroundImg[i-1]+'")';
+        thumbnail[i-1].classList.add("active");
+        thumbnail[i].classList.remove("active");
+        i--;
+      }
+      }
+    </script>
+</div>
+</html>

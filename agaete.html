@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Agaete | Hotel Occidental Roca Negra </title>
+  <link rel="stylesheet" href="style8.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="topnav">
+      <a href="Web.html">Inicio</a>
+      <a href="galeria.html">Galería</a>
+      <a href="formulario.html">Club</a>
+      <a href="presentación.html">Presentación</a>
+      <div class="dropdown">
+        <button class="dropbtn">Contacto</button>
+        <div class="dropdown-content">
+          <a href="https://www.instagram.com/barcelohotelsresorts/?hl=es">Instagram</a>
+          <a href="https://es-es.facebook.com/barcelohotels/">Facebook</a>
+          <a href="https://twitter.com/barcelohoteles?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>
+        </div>
+    </div>
+  </div>
+
+<section class ="header">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Poppins">
+  <h1 style="color: rgb(141, 111, 55)"> AGAETE</h1>
+</section>
+
+
+<div id="hero">
+    <div class="slider">
+      <img src = "Imagenes/left-arrow.png" id = "prev">
+      <div class="preview">
+        <img src="Imagenes/agaete.jpg" class="active thumbnail">
+        <img src="Imagenes/ag1.jpg" class="thumbnail">
+        <img src="Imagenes/ag2.jpg" class="thumbnail">
+        <img src="Imagenes/ag3.jpg" class="thumbnail">
+        <img src="Imagenes/ag4.jpg" class="thumbnail">
+        <img src="Imagenes/ag5.jpg" class="thumbnail">
+        <img src="Imagenes/ag6.jpg" class="thumbnail">
+        <img src="Imagenes/ag7.jpg" class="thumbnail">
+        <img src="Imagenes/ag8.jpg" class="thumbnail">
+        <img src="Imagenes/ag9.jpg" class="thumbnail">
+      </div>
+      <img src = "Imagenes/right-arrow.png" id = "next">
+    </div>
+
+    <script>
+      var prev = document.getElementById("prev");
+      var next = document.getElementById("next");
+      var thumbnail = document.getElementsByClassName("thumbnail");
+      var hero = document.getElementById("hero");
+      var backgroundImg = new Array(
+        "Imagenes/agaete.jpg",
+        "Imagenes/ag1.jpg",
+        "Imagenes/ag2.jpg",
+        "Imagenes/ag3.jpg",
+        "Imagenes/ag4.jpg",
+        "Imagenes/ag5.jpg",
+        "Imagenes/ag6.jpg",
+        "Imagenes/ag7.jpg",
+        "Imagenes/ag8.jpg",
+        "Imagenes/ag9.jpg",
+      );
+      let i = 0;
+      next.onclick = function(){
+        if(i < 9){
+        hero.style.backgroundImage = 'url("'+backgroundImg[i+1]+'")';
+        thumbnail[i+1].classList.add("active");
+        thumbnail[i].classList.remove("active");
+        i++;
+      }
+      }
+
+      prev.onclick = function(){
+        if(i > 0){
+        hero.style.backgroundImage = 'url("'+backgroundImg[i-1]+'")';
+        thumbnail[i-1].classList.add("active");
+        thumbnail[i].classList.remove("active");
+        i--;
+      }
+      }
+    </script>
+</div>
+</html>
